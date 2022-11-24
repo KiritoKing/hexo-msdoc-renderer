@@ -7,18 +7,18 @@ order_by: title # date,-date,title,url,...
 head: '<!--<script src="" async></script>-->' # Add anything to <head></head>
 
 archives:
-  switch: true # true,false Switching this function.
+  switch: false # true,false Switching this function.
   categories: [] # Only the categories you set will be displayed on the archive page.
 
 menu:
-  归档: archives
-  # 友链: py.html
-  # 关于: about.html
+  首页: /
+  所有文章: archives
+  关于: about
 
 footer_link:
 
 github:
-  repo: nexmoe/books # nexmoe/books
+  repo: KiritoKing/hexo-geography-blog # nexmoe/books
   edit: true # true,false
   history: true # true,false
 
@@ -28,7 +28,7 @@ analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag
   cnzz_site_id: #<ID>
   tencent_site_id: #<ID>
   la_site_id: #<ID>
-  baidu_site_id: 41b04999ee3d67f2acc9ce741045e68d
+  baidu_site_id: #<ID>
   gtm_container_id: #<ID>
 
 cdn: # 这里可以修改站点使用的库的CDN
@@ -41,20 +41,20 @@ cdn: # 这里可以修改站点使用的库的CDN
   valine:
     js: https://cdn.jsdelivr.net/npm/valine
 
-comment: giscus # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere,DiscussBot,utteranc,giscuss 使用 false 可以关闭
+comment: false # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere,DiscussBot,utteranc,giscuss 使用 false 可以关闭
 
 gitalk:
-  admin: nexmoe # 拥有对该repo进行操作的 GitHub username
-  owner: nexmoe # 持有该 repo 的 GitHub username
-  repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
-  clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
-  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
+  admin:  # 拥有对该repo进行操作的 GitHub username
+  owner:  # 持有该 repo 的 GitHub username
+  repo:  # 存放评论的 issue 所在的 repo
+  clientID:  # GitHub Client ID
+  clientSecret:  # GitHub Client Secret
 
 gitment:
-  owner: nexmoe # 持有该 repo 的 GitHub username
-  repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
-  clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
-  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
+  owner:  # 持有该 repo 的 GitHub username
+  repo:  # 存放评论的 issue 所在的 repo
+  clientID:  # GitHub Client ID
+  clientSecret:  # GitHub Client Secret
 
 valine: 
   appId: <API_ID> # leancloud application app id
@@ -94,10 +94,10 @@ utteranc: # https://utteranc.es/
 	theme: github-light
 
 giscus: # https://giscus.app/
-  repo: nexmoe/books
-  repo_id: MDEwOlJlcG9zaXRvcnkzNjk5Njc4OTg
-  category: General
-  category_id: DIC_kwDOFg1DGs4B_sy8
+  repo: 
+  repo_id: 
+  category: 
+  category_id: 
   mapping: title
   reactions_enabled: 1
   theme: light
