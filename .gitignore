@@ -7,10 +7,11 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
-themes/particle
 
 # project
 !node_modules/hexo-theme-yet-the-books
+themes
 public/*
 doc/*
+# source/*
 _config.yml
