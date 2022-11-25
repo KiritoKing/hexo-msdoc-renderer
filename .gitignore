@@ -13,5 +13,5 @@ _multiconfig.yml
 themes
 public/*
 doc/*
-# source/*
+source/*
 _config.yml
