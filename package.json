@@ -29,6 +29,6 @@
     "hexo-renderer-sass-next": "^0.1.2",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-yet-the-books-custom": "^1.4.2"
+    "hexo-theme-yet-the-books-custom": "^1.4.3"
   }
 }
