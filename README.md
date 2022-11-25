@@ -42,6 +42,37 @@ hexo generate # 生成静态文件
 hexo deploy # 部署
 ```
 
+注意：本项目由于项目安全原因没有提供 `_config.yml` ，请参照官网自行设置一份，需要单独配置的项目如下：
+
+```yaml
+permalink: posts/:abbrlink/
+
+auto_category:
+ enable: true
+ depth: 
+
+ # abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep:        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: false  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
+
+marked:
+  prependRoot: true
+  postAsset: true
+```
+
+
+
 #### 转码Docx文件
 
 1. 将文件放入 `./doc` 目录中（注意目前仅支持单级目录结构，这是主题选择决定的，详见`./convert.js`）
